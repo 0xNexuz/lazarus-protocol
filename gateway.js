@@ -1,0 +1,1 @@
+const express = require("express"); const app = express(); const port = 3000; app.get("/ask", (req, res) => { res.status(402).json({ message: "PAYMENT REQUIRED", agent_status: "ALIVE", payTo: "D7QTHcVvUy3SXYouTUUFsxjTvd7gtWKsnVsNsEPdiNno" }); }); app.listen(port, () => { console.log("Lazarus Server Revived at http://localhost:3000/ask"); });
